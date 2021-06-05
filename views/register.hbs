@@ -1,3 +1,5 @@
+ {{> csslink}}
+    
 
         <!-- Begin page -->
         <div class="accountbg"></div>
@@ -11,23 +13,26 @@
                     </h3>
 
                     <div class="p-3">
-                        <form class="form-horizontal" action="index.html">
+                        <form class="form-horizontal" method="POST" action="register">
 
                             <div class="form-group row">
                                 <div class="col-12">
-                                    <input class="form-control" type="email" required="" placeholder="Email">
+                                    <label for="email">Email</label>
+                                    <input class="form-control" type="email" required="" placeholder="Enter Email" id="email" name="email">
                                 </div>
                             </div>
 
                             <div class="form-group row">
                                 <div class="col-12">
-                                    <input class="form-control" type="text" required="" placeholder="Username">
+                                    <label for="username">Username</label>
+                                    <input class="form-control" type="text" required="" placeholder="Enter Username" id="username" name="username">
                                 </div>
                             </div>
 
                             <div class="form-group row">
                                 <div class="col-12">
-                                    <input class="form-control" type="password" required="" placeholder="Password">
+                                    <label for="password">Password</label>
+                                    <input class="form-control" type="password" required="" placeholder="Enter Password" id="ppassword" name="password">
                                 </div>
                             </div>
 
@@ -48,7 +53,7 @@
 
                             <div class="form-group m-t-10 mb-0 row">
                                 <div class="col-12 m-t-20 text-center">
-                                    <a href="pages-login.html" class="text-muted">Already have account?</a>
+                                    <a href="/users/login" class="text-muted">Already have account?</a>
                                 </div>
                             </div>
                         </form>
@@ -57,3 +62,5 @@
                 </div>
             </div>
         </div>
+          {{> footer}}
+    {{> jslinks}}
